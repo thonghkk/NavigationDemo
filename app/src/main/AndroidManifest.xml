@@ -4,12 +4,44 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/mu"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Grammar.GrammarWord.GrammarTinhTu"></activity>
+        <activity android:name=".Grammar.GrammarWord.GrammarGioTu" />
+        <activity android:name=".Grammar.GrammarWord.GrammarTrangTu" />
+        <activity android:name=".Grammar.GrammarWord.GrammarDongTu" />
+        <activity android:name=".Grammar.GrammarWord.GrammarDanhTu" />
+        <activity android:name=".Grammar.GrammarWord.GrammarBangBatQuyTac" />
+        <activity android:name=".Grammar.GrammarSentence.GrammarMenhDeQuanHe" />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCauSoSanh" />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCauDieuKien" />
+        <activity android:name=".Grammar.GrammarSentence.GrammarTrucTiepGianTiep" />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCauUoc" />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCauBiDong" />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCacThi" />
+        <activity
+            android:name=".Exercise.Exercise"
+            android:label="Exercise">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2" />
+        </activity>
+        <activity
+            android:name=".Grammar.Grammar"
+            android:label="Grammar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2" />
+        </activity>
+        <activity
+            android:name=".Main2"
+            android:label="AppEnglish" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
