@@ -43,4 +43,7 @@ dependencies {
     //fragment
     androidTestImplementation 'com.google.android.material:1.1.0'
 
+    //pdf
+    implementation 'com.github.barteksc:android-pdf-viewer:2.5.1'
+
 }

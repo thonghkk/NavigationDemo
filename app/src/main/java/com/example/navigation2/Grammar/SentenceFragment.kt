@@ -1,5 +1,6 @@
 package com.example.navigation2.Grammar
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.navigation2.Grammar.GrammarSentence.*
 import com.example.navigation2.RecycleViewAdapter.CustomAdapterGrammar
 import com.example.navigation2.RecycleViewAdapter.CustomListener
 import com.example.navigation2.RecycleViewAdapter.Model
@@ -34,9 +36,9 @@ class SentenceFragment : Fragment(), CustomListener {
         models.add(Model("2.Câu Bị Động","Cấu Trúc Ngữ Pháp Và Các Trường Hợp Đặc Biệt"))
         models.add(Model("3.Câu Ước","Cấu Ước Các Loại 1 , 2 Và 3"))
         models.add(Model("4.Câu Trực Tiếp Và Câu Gián Tiếp","Câu trực Tiếp,Câu Gián Tiếp Và Cách Chuyển Từ"))
-        models.add(Model("Câu Điều Kiện","Câu Điều Kiện Loại 1, 2, 3"))
-        models.add(Model("Câu So Sánh","So Sánh Bằng,So Sánh Hơn,So Sánh Nhất"))
-        models.add(Model("Mệnh Đề Quan Hệ","Đại Từ Quan Hệ,Trạng Từ Quan Hệ,... "))
+        models.add(Model("5.Câu Điều Kiện","Câu Điều Kiện Loại 1, 2, 3"))
+        models.add(Model("6.Câu So Sánh","So Sánh Bằng,So Sánh Hơn,So Sánh Nhất"))
+        models.add(Model("7.Mệnh Đề Quan Hệ","Đại Từ Quan Hệ,Trạng Từ Quan Hệ,... "))
 
         val mAdapter = CustomAdapterGrammar(models,this)
 
@@ -49,16 +51,34 @@ class SentenceFragment : Fragment(), CustomListener {
 
     override fun onCustomClick(position: Int) {
         if (position == 0){
-//            val intent = Intent(context,Main2::class.java)
-//            startActivity(intent)
-            Toast.makeText(context,"Click1",Toast.LENGTH_SHORT).show()
+            val intent = Intent(context,GrammarCacThi::class.java)
+            startActivity(intent)
         }
         if (position == 1){
-            Toast.makeText(context,"Click2",Toast.LENGTH_SHORT).show()
+            val intent = Intent(context,GrammarCauBiDong::class.java)
+            startActivity(intent)
         }
         if (position == 2){
-            Toast.makeText(context,"Click3",Toast.LENGTH_SHORT).show()
+            val intent = Intent(context,GrammarCauUoc::class.java)
+            startActivity(intent)
         }
+        if (position == 3){
+            val intent = Intent(context,GrammarTrucTiepGianTiep::class.java)
+            startActivity(intent)
+        }
+        if (position == 4){
+            val intent = Intent(context,GrammarCauDieuKien::class.java)
+            startActivity(intent)
+        }
+        if (position == 5){
+            val intent = Intent(context,GrammarCauSoSanh::class.java)
+            startActivity(intent)
+        }
+        if (position == 6){
+            val intent = Intent(context,GrammarMenhDeQuanHe::class.java)
+            startActivity(intent)
+        }
+
 
     }
 

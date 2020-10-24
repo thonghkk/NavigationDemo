@@ -9,19 +9,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Grammar.GrammarWord.GrammarTinhTu"></activity>
-        <activity android:name=".Grammar.GrammarWord.GrammarGioTu" />
-        <activity android:name=".Grammar.GrammarWord.GrammarTrangTu" />
-        <activity android:name=".Grammar.GrammarWord.GrammarDongTu" />
-        <activity android:name=".Grammar.GrammarWord.GrammarDanhTu" />
-        <activity android:name=".Grammar.GrammarWord.GrammarBangBatQuyTac" />
-        <activity android:name=".Grammar.GrammarSentence.GrammarMenhDeQuanHe" />
-        <activity android:name=".Grammar.GrammarSentence.GrammarCauSoSanh" />
-        <activity android:name=".Grammar.GrammarSentence.GrammarCauDieuKien" />
-        <activity android:name=".Grammar.GrammarSentence.GrammarTrucTiepGianTiep" />
-        <activity android:name=".Grammar.GrammarSentence.GrammarCauUoc" />
-        <activity android:name=".Grammar.GrammarSentence.GrammarCauBiDong" />
-        <activity android:name=".Grammar.GrammarSentence.GrammarCacThi" />
+        <activity android:name=".Grammar.GrammarWord.GrammarTinhTu"
+            android:label="Tính Từ"
+            android:parentActivityName=".Exercise.Exercise"
+         />
+        <activity android:name=".Grammar.GrammarWord.GrammarGioTu"
+            android:label="Giới Từ"
+            android:parentActivityName=".Exercise.Exercise"
+            />
+        <activity android:name=".Grammar.GrammarWord.GrammarTrangTu"
+            android:label="Trạng Từ"
+            android:parentActivityName=".Exercise.Exercise"
+            />
+        <activity android:name=".Grammar.GrammarWord.GrammarDongTu"
+            android:label="Động Từ"
+            android:parentActivityName=".Exercise.Exercise"
+            />
+        <activity android:name=".Grammar.GrammarWord.GrammarDanhTu"
+            android:label="Danh Từ"
+            android:parentActivityName=".Exercise.Exercise"/>
+        <activity android:name=".Grammar.GrammarWord.GrammarBangBatQuyTac"
+            android:label="Bảng Động Từ Bất Quy Tắc"
+            android:parentActivityName=".Exercise.Exercise"
+            />
+        <activity android:name=".Grammar.GrammarSentence.GrammarMenhDeQuanHe"
+            android:label="Mệnh Đề Quan Hệ"
+            android:parentActivityName=".Grammar.Grammar"
+            />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCauSoSanh"
+            android:label="Câu So Sánh"
+            android:parentActivityName=".Grammar.Grammar"
+            />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCauDieuKien"
+            android:label="Câu Điều Kiện"
+            android:parentActivityName=".Grammar.Grammar"
+            />
+        <activity android:name=".Grammar.GrammarSentence.GrammarTrucTiepGianTiep"
+            android:label="Câu Trực Tiếp,Gián Tiếp"
+            android:parentActivityName=".Grammar.Grammar"
+            />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCauUoc"
+            android:label="Câu Ước"
+            android:parentActivityName=".Grammar.Grammar"
+            />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCauBiDong"
+            android:label="Câu Bị Động"
+            android:parentActivityName=".Grammar.Grammar"
+            />
+        <activity android:name=".Grammar.GrammarSentence.GrammarCacThi"
+            android:label="Các Thì"
+            android:parentActivityName=".Grammar.Grammar"
+            />
         <activity
             android:name=".Exercise.Exercise"
             android:label="Exercise">
