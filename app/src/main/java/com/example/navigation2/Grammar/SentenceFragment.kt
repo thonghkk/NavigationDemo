@@ -33,9 +33,9 @@ class SentenceFragment : Fragment(), CustomListener {
 
         val models = ArrayList<Model>()
         models.add(Model("1.Các Thì Trong Tiếng Anh","Tập Hợp Lý Thuyết Về Tất Cả Các Thì"))
-        models.add(Model("2.Câu Bị Động","Cấu Trúc Ngữ Pháp Và Các Trường Hợp Đặc Biệt"))
+        models.add(Model("2.Câu Bị Động","Cấu Trúc Ngữ Pháp,Các Trường Hợp Đặc Biệt"))
         models.add(Model("3.Câu Ước","Cấu Ước Các Loại 1 , 2 Và 3"))
-        models.add(Model("4.Câu Trực Tiếp Và Câu Gián Tiếp","Câu trực Tiếp,Câu Gián Tiếp Và Cách Chuyển Từ"))
+        models.add(Model("4.Câu Trực Tiếp Và Câu Gián Tiếp","Câu trực Tiếp,Câu Gián Tiếp,Cách Chuyển Từ"))
         models.add(Model("5.Câu Điều Kiện","Câu Điều Kiện Loại 1, 2, 3"))
         models.add(Model("6.Câu So Sánh","So Sánh Bằng,So Sánh Hơn,So Sánh Nhất"))
         models.add(Model("7.Mệnh Đề Quan Hệ","Đại Từ Quan Hệ,Trạng Từ Quan Hệ,... "))

@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="Thong"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:textStyle="bold"
             android:layout_marginTop="8sp"
             android:paddingBottom="8sp"/>

@@ -1,5 +1,6 @@
 package com.example.navigation2.Exercise
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,10 +9,13 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.navigation2.Question.DBHelper.Constants.TOTALEXE1
+import com.example.navigation2.Question.QuizActivity
 import com.example.navigation2.RecycleViewAdapter.CustomAdapterGrammar
 import com.example.navigation2.RecycleViewAdapter.CustomListener
 import com.example.navigation2.RecycleViewAdapter.Model
 import com.example.navigation2.R
+import com.github.barteksc.pdfviewer.util.Constants
 
 
 class GeneralTestFragment : Fragment(), CustomListener {
@@ -41,9 +45,11 @@ class GeneralTestFragment : Fragment(), CustomListener {
 
     override fun onCustomClick(position: Int) {
         if (position == 0){
-//            val intent = Intent(context,Main2::class.java)
-///          startActivity(intent)
-            Toast.makeText(context,"Click1", Toast.LENGTH_SHORT).show()
+            if (position == 0) {
+                val intentEz = Intent(context, QuizActivity::class.java)
+                intentEz.putExtra("Category",TOTALEXE1)
+                startActivity(intentEz)
+            }
         }
 
     }

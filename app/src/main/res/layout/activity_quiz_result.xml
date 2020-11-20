@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#44BDF4"
+    tools:context=".Question.QuizResult">
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="KẾT QUẢ"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/img_trophy"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="image"
+        android:layout_below="@+id/txt_result"
+        android:src="@drawable/bac" />
+    <TextView
+        android:id="@+id/txt_trophy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Chúc Mừng Bạn Vừa Hoàn Thành Câu Hỏi !"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_below="@+id/img_trophy"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:text="Bạn Đã Trả Lời Đúng 8 Câu"
+        android:layout_below="@+id/txt_trophy"/>
+
+    <Button
+        android:id="@+id/btn_finishZ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_click"
+        android:text="FINISH"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/txt_score"
+
+        />
+
+
+</LinearLayout>

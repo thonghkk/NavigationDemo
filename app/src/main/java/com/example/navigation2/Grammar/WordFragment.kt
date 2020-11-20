@@ -30,8 +30,8 @@ class WordFragment : Fragment() ,CustomListener {
 
         val view :View =  inflater.inflate(R.layout.fragment_general_test, container, false)
         val models = ArrayList<Model>()
-        models.add(Model("1.Bảng Động Từ Bất Quy Tắc","Tổng Hợp Các Động Từ Bất Quy Tắc Thường Gặp"))
-        models.add(Model("2.Danh Từ","Các Loại Danh Từ Đếm Được và Không Đếm Được"))
+        models.add(Model("1.Bảng Động Từ Bất Quy Tắc","Các Động Từ Bất Quy Tắc Thường Gặp"))
+        models.add(Model("2.Danh Từ","Các Loại Danh Từ Đếm Được,Không Đếm Được"))
         models.add(Model("3.Động Từ","Động Từ Khuyết Thiếu,Nội Ngoại Động Từ"))
         models.add(Model("4.Trạng Từ","Vị Trị,Phân Loại,Các Loại Thường Gặp"))
         models.add(Model("5.Giới Từ","Định Nghĩa Cách Dùng,Các Loại Giới Từ"))
