@@ -9,7 +9,7 @@
         <item
             android:id="@+id/mBook"
             android:icon="@drawable/ic_book"
-            android:title="Book" />
+            android:title="Note" />
     </group>
 
 

@@ -9,6 +9,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import com.example.navigation2.Exercise.Exercise
 import com.example.navigation2.Grammar.Grammar
+import com.example.navigation2.NoteVoca.MainNote
 import kotlinx.android.synthetic.main.activity_main2.*
 
 class Main2 : AppCompatActivity() {
@@ -30,11 +31,15 @@ class Main2 : AppCompatActivity() {
         //item event handling
         navMain.setNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.mHome -> Toast.makeText(
-                    applicationContext,
-                    "This is Home ",
-                    Toast.LENGTH_SHORT
-                ).show()
+                R.id.mHome -> {
+                    val intent = Intent(this,Main2::class.java)
+                    startActivity(intent)
+                }
+                R.id.mBook ->{
+                    val intent = Intent(this,MainNote::class.java)
+                    startActivity(intent)
+                }
+
                 R.id.mLogout -> {
                     finish()
                 }
