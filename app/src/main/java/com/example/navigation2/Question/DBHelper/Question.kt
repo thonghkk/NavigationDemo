@@ -1,6 +1,6 @@
 package com.example.navigation2.Question.DBHelper
 
-open class Question {
+open class  Question {
 
 
     companion object{

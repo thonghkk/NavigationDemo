@@ -16,7 +16,7 @@ class QuizResult : AppCompatActivity() {
 
         val txtScore = findViewById<TextView>(R.id.txt_score)
 
-        val scoreTotal = intent.getIntExtra("Score",0)
+        val scoreTotal = intent.getIntExtra("Score", 0)
 
         txtScore.text = "Số Câu Trả Lời Đúng Của Bạn Là: $scoreTotal"
         nextActivity()
@@ -28,7 +28,7 @@ class QuizResult : AppCompatActivity() {
 
     }
 
-    fun nextActivity(){
+    fun nextActivity() {
         btn_finishZ.setOnClickListener {
             val intent = Intent(this@QuizResult, Exercise::class.java)
             startActivity(intent)
