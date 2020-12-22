@@ -41,7 +41,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Created By ThongNguyen"
+        android:text="Created By #thonghkk"
         android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold"

@@ -32,7 +32,7 @@ class GeneralTestFragment : Fragment(), CustomListener {
         // Inflate the layout for this fragment
         val view :View =  inflater.inflate(R.layout.fragment_general_test, container, false)
         val models = ArrayList<Model>()
-        models.add(Model("1.Câu Gián Tiếp ","Bài Kiểm Tra 1"))
+        models.add(Model("1.Bài Kiểm Tra 1",""))
 
         val mAdapter = CustomAdapterGrammar(models,this)
 
